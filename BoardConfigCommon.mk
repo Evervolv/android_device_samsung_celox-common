@@ -30,6 +30,9 @@ BOARD_FAMILY := celox
 # inherit from common msm8660
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
+# Kernel toolchain
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
+
 # Kernel
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true zcache
 BOARD_KERNEL_BASE           := 0x40400000
