@@ -24,7 +24,6 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_cons
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
-KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-4.7/bin/arm-eabi-
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
