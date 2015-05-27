@@ -28,3 +28,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
+
+# TWRP
+DEVICE_RESOLUTION := 480x800
+TW_THEME := portrait_mdpi
