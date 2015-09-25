@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/samsung/celox-common/celox-common-vendo
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/celox-common/overlay
 
+# Bootanimation
+BOOT_ANIMATION_SIZE := wvga
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi

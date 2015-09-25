@@ -23,12 +23,13 @@ BOARD_KERNEL_BASE := 0x40400000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
 
 # Recovery
+BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 
 # TWRP
 DEVICE_RESOLUTION := 480x800
 TW_THEME := portrait_mdpi
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.196609/leds/lcd-backlight/brightness
